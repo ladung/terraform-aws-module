@@ -1,0 +1,6 @@
+https://medium.com/@ywg/blue-green-deployment-on-aws-ecs-with-terraform-7dfd67502b5b
+
+`aws ecs describe-task-definition — task-definition “$ecs_task_def_name” — query taskDefinition > task-definition.json`
+
+
+`aws deploy create-deployment --cli-input-yaml file://appspec.yaml`
