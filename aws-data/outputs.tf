@@ -17,3 +17,4 @@ output "aws_ami_ids" {
   description = "A list of AMI IDs"
   value       = { for k, v in data.aws_ami.this : k => tomap({ id = v.image_id, root_device_name = v.root_device_name }) }
 }
+
